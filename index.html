@@ -6,79 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="page-container">
         <div class="sidebar">
             <div class="sidebar-logo">
-                <div class="logo-icon"></div>
                 <div class="logo-text">Dashboard</div>
             </div>
             <div class="main-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Profile</a></li>
-                    <li><a href="#">Messages</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Tasks</a></li>
-                    <li><a href="#">Communities</a></li>
+                    <li><a href="#"><span class="material-icons"></span>Messages</a></li>
+                    <li><a href="#"><span class="material-icons"></span>History</a></li>
+                    <li><a href="#"><span class="material-icons"></span>Tasks</a></li>
+                    <li><a href="#"><span class="material-icons"></span>Communities</a></li>
                 </ul>
             </div>
             <div class="settings-menu">
                 <ul>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#"><span class="material-icons"></span>Settings</a></li>
+                    <li><a href="#"><span class="material-icons"></span>Support</a></li>
+                    <li><a href="#"><span class="material-icons"></span>Privacy</a></li>
                 </ul>
             </div>
         </div>
-        <header id="header">
-            <div class="search-wrapper">
-                <div class="search-icon"></div>
-                <div class="search-bar"></div>
-                <div class="notifications"></div>
-                <div class="user-avatar"></div>
-                <div class="username">Morgan Oakley</div>
-            </div>
-            <div class="controls-wrapper">
-                <div class="user-avatar"></div>
-                <div class="greeting">Hi there, Morgan Oakley (@morgan)</div>
-                <div class="control-btns">
-                    <button class="new">New</button>
-                    <button class="upload">Upload</button>
-                    <button class="share">Share</button>
+        <div class="main-container">
+            <div class="header">
+                <div class="search-wrapper">
+                    <div class="search-icon"></div>
+                    <div class="search-bar"></div>
+                    <div class="notifications"></div>
+                    <div class="user-avatar"></div>
+                    <div class="username">Morgan Oakley</div>
                 </div>
-            </div>
-        </header>
-        <main id="main">
-            <div class="projects">
-                <h3>Your Projects</h3>
-                <div class="projects-wrapper">
-                    <div class="project project1">
-                        Super Cool Project
-                    </div>
-                    <div class="project project2">
-                        Less Cool Project
-                    </div>
-                    <div class="project project3">
-                        Impossible App
-                    </div>
-                    <div class="project project4">
-                        Easy Peasy App
-                    </div>
-                    <div class="project project5">
-                        Ad Blocker
-                    </div>
-                    <div class="project project6">
-                        Money Maker
+                <div class="controls-wrapper">
+                    <div class="user-avatar"></div>
+                    <div class="greeting">Hi there, Morgan Oakley (@morgan)</div>
+                    <div class="control-btns">
+                        <button class="new">New</button>
+                        <button class="upload">Upload</button>
+                        <button class="share">Share</button>
                     </div>
                 </div>
             </div>
-            <div class="announcements"></div>
-            <div class="trending"></div>
-        </main>
+            <div class="content">
+                <div class="projects">
+                    <h3>Your Projects</h3>
+                    <div class="projects-wrapper">
+                        <div class="project project1">
+                            Super Cool Project
+                        </div>
+                        <div class="project project2">
+                            Less Cool Project
+                        </div>
+                        <div class="project project3">
+                            Impossible App
+                        </div>
+                        <div class="project project4">
+                            Easy Peasy App
+                        </div>
+                        <div class="project project5">
+                            Ad Blocker
+                        </div>
+                        <div class="project project6">
+                            Money Maker
+                        </div>
+                    </div>
+                </div>
+                <div class="announcements"></div>
+                <div class="trending"></div>
+            </div>
+        </div>
     </div>
 </body>
 
