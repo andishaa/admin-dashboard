@@ -23,7 +23,7 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 10rem 1fr;
     grid-template-areas: 
     "header"
     "projects";
@@ -64,4 +64,53 @@ body {
 
 .sidebar a:link {
     color: inherit;
+}
+
+/* --- --- HEADER --- --- */
+#header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "search notifications"
+    "greeting buttons";
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.search-wrapper {
+    grid-area: search;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar input[type="search"] {
+    padding: 0.4rem;
+    width: min(50vw, 40rem);
+    border-radius: 0.8rem;
+    border: none;
+    background-color: lightgrey;
+}
+
+.notifications-wrapper {
+    grid-area: notifications;
+    display: flex;
+    gap: 1rem;
+}
+
+.greet-wrapper {
+    grid-area: greeting;
+}
+
+.control-btns {
+    grid-area: buttons;
+}
+
+/* --- --- CONTENT --- --- */
+.content {
+    grid-area: projects;
 }
