@@ -114,7 +114,10 @@ body {
     "greeting buttons";
     align-items: center;
     gap: 1rem;
-    margin: 1rem 3rem;
+    padding: 1rem 3rem;
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
 }
 
 .search-wrapper {
