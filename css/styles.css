@@ -84,6 +84,7 @@ body {
 .sidebar ul > li > a {
     display: flex;
     gap: 1rem;
+    width: max-content;
     align-items: center;
 }
 
