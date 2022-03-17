@@ -16,7 +16,8 @@
     --main-color: rgb(43, 144, 238);
     --accent: rgb(255, 165, 0);
     --white: rgb(255, 255, 255);
-    --shadow: 0.1rem 0px 6px rgb(128, 128, 128);
+    --shadow: 0 4px 5px -3px rgb(128, 128, 128);
+    --shadow-box: 2px 4px 6px -3px rgb(128, 128, 128);
 }
 
 html {
@@ -223,6 +224,10 @@ body {
 .project {
     height: 15rem;
     padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    border-left: 0.5rem solid var(--accent);
+    box-shadow: var(--shadow-box);
 }
 
 .project h3 {
