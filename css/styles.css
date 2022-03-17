@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* --- --- MATERIAL ICONS --- --- */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+/* --- --- --- --- --- --- */
+
 * {
     box-sizing: border-box;
 }
+
 :root {
     --bg-color: rgb(230, 230, 230);
     --main-color: rgb(43, 144, 238);
@@ -60,7 +68,12 @@ body {
 
 .sidebar-logo {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.dashboard {
+    font-size: 1.8rem;
 }
 
 .sidebar ul {
