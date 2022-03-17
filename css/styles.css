@@ -144,6 +144,11 @@ body {
     gap: 1.5rem;
 }
 
+.notifications-wrapper .username {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
 .greet-wrapper {
     grid-area: greeting;
     display: grid;
@@ -163,10 +168,14 @@ body {
 .greet-wrapper > .greeting {
     grid-area: greeting;
     align-self: end;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .greet-wrapper > .username {
     grid-area: username;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .control-btns {
