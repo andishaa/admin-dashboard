@@ -40,7 +40,6 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10rem 1fr;
     grid-template-areas: 
     "header"
     "projects";
@@ -109,13 +108,12 @@ body {
     grid-area: header;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
     grid-template-areas:
     "search notifications"
     "greeting buttons";
     align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 1rem;
+    margin: 1rem 3rem;
 }
 
 .search-wrapper {
