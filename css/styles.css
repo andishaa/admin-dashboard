@@ -29,6 +29,13 @@ body {
     "projects";
 }
 
+.avatar-s {
+    background-color: orange;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
 /* --- --- SIDEBAR --- --- */
 .sidebar {
     grid-area: sidebar;
@@ -99,11 +106,33 @@ body {
 .notifications-wrapper {
     grid-area: notifications;
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
 .greet-wrapper {
     grid-area: greeting;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-areas: "avatar greeting"
+    "avatar username";
+}
+.greet-wrapper > .user-avatar {
+    grid-area: avatar;
+    background-color: orange;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.greet-wrapper > .greeting {
+    grid-area: greeting;
+    align-self: end;
+}
+
+.greet-wrapper > .username {
+    grid-area: username;
 }
 
 .control-btns {
@@ -170,5 +199,5 @@ body {
 .trending {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
