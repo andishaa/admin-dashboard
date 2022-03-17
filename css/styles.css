@@ -16,6 +16,7 @@
     --main-color: rgb(43, 144, 238);
     --accent: rgb(255, 165, 0);
     --white: rgb(255, 255, 255);
+    --shadow: 0.1rem 0px 6px rgb(128, 128, 128);
 }
 
 html {
@@ -118,6 +119,7 @@ body {
     background-color: var(--white);
     position: sticky;
     top: 0;
+    box-shadow: var(--shadow);
 }
 
 .search-wrapper {
@@ -130,7 +132,7 @@ body {
 
 .search-bar input[type="search"] {
     padding: 0.4rem;
-    width: min(50vw, 40rem);
+    width: min(30vw, 40rem);
     border-radius: 0.8rem;
     border: none;
     background-color: var(--bg-color);
@@ -152,7 +154,7 @@ body {
 .greet-wrapper {
     grid-area: greeting;
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
     grid-template-areas: "avatar greeting"
     "avatar username";
 }
