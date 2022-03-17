@@ -82,6 +82,12 @@ body {
     list-style: none;
 }
 
+.sidebar ul > li > a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 .sidebar li {
     padding: 0.8rem;
 }
