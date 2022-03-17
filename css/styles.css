@@ -180,6 +180,20 @@ body {
 
 .control-btns {
     grid-area: buttons;
+    display: flex;
+    gap: 2rem;
+    justify-self: end;
+}
+
+.control-btns button {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.6rem 2rem;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
 }
 
 /* --- --- CONTENT --- --- */
