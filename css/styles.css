@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --bg-color: rgb(230, 230, 230);
+    --main-color: rgb(0, 132, 255);
+    --accent: rgb(255, 165, 0);
+}
 
 html {
     height: 100%;
@@ -30,7 +35,7 @@ body {
 }
 
 .avatar-s {
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -43,7 +48,7 @@ body {
     flex-direction: column;
     gap: 3rem;
     padding: 1.5rem;
-    background-color: orange;
+    background-color: var(--main-color);
 }
 
 .sidebar-logo {
@@ -100,7 +105,7 @@ body {
     width: min(50vw, 40rem);
     border-radius: 0.8rem;
     border: none;
-    background-color: lightgrey;
+    background-color: var(--bg-color);
 }
 
 .notifications-wrapper {
@@ -146,13 +151,13 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
     "project-cards content-sidebar";
+    background-color: var(--bg-color);
 }
 
 .projects {
     grid-area: project-cards;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    border: 1px solid red;
 }
 
 .projects-wrapper {
@@ -163,7 +168,6 @@ body {
 
 .project {
     height: 15rem;
-    border: 1px solid blue;
     padding: 1.5rem;
 }
 
@@ -174,7 +178,6 @@ body {
 /* --- --- CONTENT SIDEBAR --- --- */
 .content-sidebar {
     grid-area: content-sidebar;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
 }
@@ -188,7 +191,6 @@ body {
 .announcement,
 .trending {
     padding: 1.5rem;
-    border: solid 1px orange;
 }
 
 .announcements-wrapper h4,
