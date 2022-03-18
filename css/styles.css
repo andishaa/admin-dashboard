@@ -222,7 +222,6 @@ body {
 }
 
 .project {
-    height: 15rem;
     padding: 1.5rem;
     background-color: var(--white);
     border-radius: 0.5rem;
