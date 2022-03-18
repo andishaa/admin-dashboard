@@ -125,6 +125,15 @@ body {
     gap: 1rem;
 }
 
+.search-wrapper button,
+.notifications-wrapper button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
 .search-bar input[type="search"] {
     padding: 0.4rem;
     width: min(30vw, 40rem);
