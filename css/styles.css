@@ -35,16 +35,9 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-areas: "sidebar main";
-}
-
-.main-container {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr;
     grid-template-areas: 
-    "header"
-    "projects";
+    "sidebar header"
+    "sidebar main";
 }
 
 .avatar-s {
@@ -200,8 +193,8 @@ body {
 }
 
 /* --- --- CONTENT --- --- */
-.content {
-    grid-area: projects;
+#main {
+    grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
