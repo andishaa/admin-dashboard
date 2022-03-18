@@ -111,8 +111,6 @@ body {
     gap: 1rem;
     padding: 1rem 3rem;
     background-color: var(--white);
-    position: sticky;
-    top: 0;
     box-shadow: var(--shadow);
 }
 
@@ -192,7 +190,7 @@ body {
     cursor: pointer;
 }
 
-/* --- --- CONTENT --- --- */
+/* --- --- MAIN --- --- */
 #main {
     grid-area: main;
     display: grid;
@@ -200,6 +198,7 @@ body {
     grid-template-areas: 
     "project-cards content-sidebar";
     background-color: var(--bg-color);
+    overflow: auto;
 }
 
 .projects {
