@@ -133,6 +133,12 @@ body {
     background-color: var(--bg-color);
 }
 
+#search:focus {
+    outline: none;
+    border: 1px solid var(--accent);
+    box-shadow: var(--shadow-box);
+}
+
 .notifications-wrapper {
     grid-area: notifications;
     display: flex;
