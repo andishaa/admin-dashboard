@@ -239,7 +239,7 @@ body {
     top: -5px;
 }
 
-.project h4 {
+h4 {
     margin-top: 0.6rem;
     margin-bottom: 0;
 }
@@ -264,27 +264,48 @@ body {
     color: var(--dark-grey);
 }
 
-/* --- --- CONTENT SIDEBAR --- --- */
-.content-sidebar {
+/* --- --- MAIN SIDEBAR --- --- */
+.main-sidebar {
     grid-area: content-sidebar;
-    display: flex;
-    flex-direction: column;
+    margin-right: 1.5rem;
 }
 
-.announcements-wrapper,
-.trending-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.announcement,
-.trending {
+.announcements-wrapper {
+    background-color: var(--white);
+    border-radius: 0.5rem;
     padding: 1.5rem;
 }
 
-.announcements-wrapper h4,
-.trending-wrapper h4 {
+.announcements-wrapper ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.announcements-wrapper li {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.announcements-wrapper p {
+    margin: 0;
+    color: var(--grey);
+}
+
+.announcements-wrapper a:link {
+    color: inherit;
+    text-decoration: none;
+}
+.announcements-wrapper a:visited {
+    color: inherit;
+}
+
+.announcement-divider {
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .trending {
