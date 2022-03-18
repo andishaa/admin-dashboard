@@ -283,6 +283,7 @@ h4 {
     background-color: var(--white);
     border-radius: 0.5rem;
     padding: 1.5rem;
+    box-shadow: var(--shadow-box);
 }
 
 .announcements-wrapper ul {
