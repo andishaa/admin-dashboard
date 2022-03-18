@@ -16,6 +16,8 @@
     --main-color: rgb(43, 144, 238);
     --accent: rgb(255, 165, 0);
     --white: rgb(255, 255, 255);
+    --dark-grey: rgb(61, 61, 61);
+    --grey: rgb(105, 105, 105);
     --shadow: 0 4px 5px -3px rgb(128, 128, 128);
     --shadow-box: 2px 4px 6px -3px rgb(128, 128, 128);
 }
@@ -215,15 +217,45 @@ body {
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem;
     background-color: var(--white);
     border-radius: 0.5rem;
     border-left: 0.5rem solid var(--accent);
     box-shadow: var(--shadow-box);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
 }
 
-.project h3 {
-    margin: 0;
+.project:hover {
+    top: -5px;
+}
+
+.project h4 {
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+}
+
+.project p {
+    color: var(--grey);
+    margin-top: 0;
+}
+
+.project .actions {
+    display: flex;
+    gap: 1rem;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.project .actions a:visited {
+    color: var(--dark-grey);
+}
+
+.project .actions a:link {
+    color: var(--dark-grey);
 }
 
 /* --- --- CONTENT SIDEBAR --- --- */
