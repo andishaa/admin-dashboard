@@ -112,6 +112,7 @@ body {
     padding: 1rem 3rem;
     background-color: var(--white);
     box-shadow: var(--shadow);
+    z-index: 3;
 }
 
 .search-wrapper {
