@@ -218,9 +218,7 @@ body {
     background-color: var(--bg-color);
     gap: 1.5rem;
     overflow: auto;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 1.5rem;
 }
 
 .projects {
