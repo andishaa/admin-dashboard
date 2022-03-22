@@ -44,6 +44,9 @@ body {
 
 .avatar-s {
     background-color: rgb(255, 165, 0);
+    background-image: url(../images/default-avatar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -170,7 +173,8 @@ body {
 }
 .greet-wrapper > .user-avatar {
     grid-area: avatar;
-    background-color: orange;
+    background-color: var(--accent);
+    background-image: url(../images/default-avatar.svg);
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
