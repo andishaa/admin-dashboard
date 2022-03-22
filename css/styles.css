@@ -276,6 +276,7 @@ h4 {
 /* --- --- MAIN SIDEBAR --- --- */
 .main-sidebar {
     grid-area: content-sidebar;
+    width: max(30ch, 100%);
 }
 
 .announcements-wrapper,
